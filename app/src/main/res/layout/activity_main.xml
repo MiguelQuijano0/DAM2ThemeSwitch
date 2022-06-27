@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?pageBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textviewSelectTheme"
+        style="?textLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_text_select_theme" />
+
+    <Spinner
+        android:id="@+id/spinnThemes"
+        style="?spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textviewSelectTheme"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/spinner_margin_left"
+        android:layout_toRightOf="@+id/textviewSelectTheme"
+        android:entries="@array/theme_array"
+        android:spinnerMode="dialog" />
+
+    <RelativeLayout
+        android:id="@+id/rlCredeciales"
+        style="?whiteBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewSelectTheme" >
+
+        <TextView
+            android:id="@+id/tvCredentials"
+            style="?textSubheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_text_credentials" />
+
+        <EditText
+            android:id="@+id/textviewusuario"
+            style="?textRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCredentials"
+            android:hint="@string/settings_text_username_hint"
+            android:inputType="text"
+            android:lines="1" />
+
+        <EditText
+            android:id="@+id/textviewcontraseña"
+            style="?textRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewusuario"
+            android:layout_marginTop="@dimen/edittext_margin_top"
+            android:hint="@string/settings_text_password_hint"
+            android:inputType="textPassword"
+            android:lines="1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textviewSync"
+        style="?textRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlCredeciales"
+        android:text="@string/settings_text_sync_automatically"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textviewSync"
+        android:layout_alignParentRight="true"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/textviewanonimo"
+        style="?textRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewSync"
+        android:layout_marginTop="@dimen/view_margin"
+        android:text="@string/settings_text_location"
+        android:textSize="17sp" />
+
+    <Switch
+        android:id="@+id/toggle_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textviewanonimo"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textviewanonimo"
+        android:switchTextAppearance="@style/switch_text_appearance"
+        android:textOff="@string/settings_text_state_off"
+        android:textOn="@string/settings_text_state_on" />
+
+    <Button
+        android:id="@+id/btniniciar"
+        style="?button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/view_margin"
+        android:textColor="@color/black"
+        android:text="@string/settings_text_clear_data" />
+
+</RelativeLayout>

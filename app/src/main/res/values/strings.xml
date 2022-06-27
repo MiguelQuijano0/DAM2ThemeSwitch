@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ThemeSwitcher</string>
+    <string name="settings_text_select_theme">Selecciona un tema:</string>
+    <string name="settings_text_credentials">Iniciar sesion</string>
+    <string name="settings_text_username_hint">Usuario</string>
+    <string name="settings_text_password_hint">Contraseña</string>
+    <string name="settings_text_sync_automatically">Mantener la sesion iniciada</string>
+    <string name="settings_text_location">anonimo</string>
+    <string name="settings_text_state_on">On</string>
+    <string name="settings_text_state_off">Off</string>
+    <string name="settings_text_clear_data">Iniciar Sesion</string>
+
+    <string-array name="theme_array">
+        <item>Material Light</item>
+        <item>Material Dark</item>
+        <item>Default</item>
+    </string-array>
+</resources>

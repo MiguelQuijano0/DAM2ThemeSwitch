@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ThemeSwitcher" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.Material_Light" parent="Theme.AppCompat.Light">
+        <item name="pageBackground">@style/page_background_wh</item>
+        <item name="textSubheader">@style/text_subheader_wh</item>
+        <item name="textLarge">@style/text_large_wh</item>
+        <item name="textRegular">@style/text_regular_wh</item>
+        <item name="whiteBackground">@style/white_background_wh</item>
+        <item name="button">@style/button_wh</item>
+        <item name="spinner">@style/spinner_wh</item>
+        <item name="actionBarStyle">@style/action_bar_wh</item>
+    </style>
+
+    <style name="Default" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="Theme.ThemeSwitcherDark" parent="Theme.AppCompat.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
